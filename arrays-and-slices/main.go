@@ -80,6 +80,12 @@ func main() {
 	fmt.Println(slice_first_6_elements)
 	fmt.Println(slice_fourth_fifth_sixth_elements)
 
+	//another slice syntax
+	l := make([]int, 10) //create slice with capacity and length ==10
+	fmt.Println(l)
+	t := make([]int, 10, 100) //create slice with length==10 and capacity==100
+	fmt.Println(t)
+
 	fmt.Println("-----------SLICE-------------------------------------------")
 
 	//slice eg:
