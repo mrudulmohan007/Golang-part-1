@@ -45,12 +45,16 @@ func main() {
 	fmt.Println(a)
 	fmt.Println(b)
 
-	//same eg but used &
+	//same eg but used "&" (pointer)
 
 	c := [3]int{1, 2, 3}
 	d := &c
 	d[1] = 5
 	fmt.Println(c)
 	fmt.Println(b)
+
+	fmt.Println("-----------SLICE-------------------------------------------")
+
+	// "-----------SLICE-------------------------------------------"
 
 }
