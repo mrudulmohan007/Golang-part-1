@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	//maps examples
+	//maps examples-----------------------------------------------------------
 	fmt.Println("Maps examples are as follows ")
 
 	statePopulations := map[string]int{
