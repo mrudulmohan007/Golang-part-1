@@ -96,7 +96,7 @@ func main() {
 	u = append(u, 1)
 	fmt.Println(u)
 	fmt.Printf("Length: %v\n", len(u))
-	fmt.Printf("Capacity: %v\n", cap(u))
+	fmt.Printf("Capacity: %v\n", cap(u)) //cap function returns length of underlying array
 
 	u = append(u, []int{2, 3, 4, 5}...) // here ... is added to spread the slice to individual arguments
 	//otherwise it will give u error
