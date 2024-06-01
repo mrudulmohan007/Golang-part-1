@@ -49,6 +49,7 @@ mylabel:
 		fmt.Println("k is string")
 	default:
 		fmt.Println("i is another type")
-
+		
 	}
 }
+
