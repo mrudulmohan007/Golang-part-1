@@ -1,3 +1,5 @@
+// panic occur when program cannot continue at all
+// Deferred functions will still execute
 package main
 
 import "fmt"

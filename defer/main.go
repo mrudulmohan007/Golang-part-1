@@ -1,5 +1,7 @@
+//defer is used to delay the execution of a statement untill fn exits
 //defer statements doesn't execute at the end of the main function
 //instead it executes after the main function but before the main function returned.
+//Run in LIFO
 
 package main
 
