@@ -27,8 +27,8 @@ func main() {
 	//eg2- Pointer Arithmetic
 
 	c := [3]int{1, 2, 3}
-	d := &c[0]                        //d is pointing to c[0] means 1
-	e := &c[1]                        //e is pointing to c[1] means 2
+	d := &c[0]                        //d is pointing to c[0] means the memory address of 1
+	e := &c[1]                        //e is pointing to c[1] means  memory address of 2
 	fmt.Printf("%v %p %p\n", c, d, e) //this will print the array c, the memory address of d and e
 	//to get the value of d and e  try this: fmt.Println(c, *d, *e)
 
