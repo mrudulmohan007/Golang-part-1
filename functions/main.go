@@ -41,7 +41,8 @@ import "fmt"
 // 	fmt.Println(*name)
 // }
 
-//eg-4-variadic parameter
+//eg-4-variadic parameter ----->> Variadic Function: A function that can take a variable
+//number of arguments (values ...int).
 func main() {
 	sum("The sum is ", 1, 2, 3, 4, 5)
 }
