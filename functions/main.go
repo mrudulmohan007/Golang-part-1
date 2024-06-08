@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // func main() {
 // 	sayMessage("Hai my name is Mrudul Mohan")
 // }
@@ -26,7 +28,28 @@ package main
 // }
 
 //eg-3
+//passing in a pointer
+// func main() {
+// 	greeting := "Hello"
+// 	name := "Stacey"
+// 	sayGreeting(&greeting, &name)
+// 	fmt.Println(name)
+// }
+// func sayGreeting(greeting *string, name *string) {
+// 	fmt.Println(*greeting, *name)
+// 	*name = "Ted"
+// 	fmt.Println(*name)
+// }
 
+//eg-4-variadic parameter
 func main() {
-
+	sum("The sum is ", 1, 2, 3, 4, 5)
+}
+func sum(msg string, values ...int) {
+	fmt.Println(values)
+	result := 0
+	for _, v := range values {
+		result = result + v
+	}
+	fmt.Println(msg, result)
 }
