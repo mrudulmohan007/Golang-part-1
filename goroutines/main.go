@@ -35,7 +35,8 @@ import (
 //thats y we use wait groups(wg)
 
 // taskA is a function that prints messages and signals that it is done by calling wg.Done().
-func taskA(wg *sync.WaitGroup) {
+var wg = sync.WaitGroup{} // Declares a WaitGroup.
+func taskA() {
 	fmt.Println("Task A")
 	fmt.Println("Task A done")
 	wg.Done() // Decrements the WaitGroup counter by one.
@@ -43,10 +44,10 @@ func taskA(wg *sync.WaitGroup) {
 
 func main() {
 	fmt.Println("concurrency")
-	var wg sync.WaitGroup // Declares a WaitGroup.
-	wg.Add(1)             // Increments the WaitGroup counter by one.
-	go taskA(&wg)         // Starts taskA in a new goroutine, passing the WaitGroup pointer.
-	wg.Wait()             // Blocks until the WaitGroup counter is zero.
+
+	wg.Add(1)  // Increments the WaitGroup counter by one.
+	go taskA() // Starts taskA in a new goroutine, passing the WaitGroup pointer.
+	wg.Wait()  // Blocks until the WaitGroup counter is zero.
 	fmt.Println("Main Exit")
 }
 
